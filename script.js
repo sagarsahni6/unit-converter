@@ -1,3 +1,22 @@
+//
+// --- JAVASCRIPT UNIT CONVERTER
+
+// If you study this file, you'll see that all the important data (namely, unit names and conversion factors) are explicitly defined as JavaScript arrays under the "Global Variable & Data Definitions" heading (which should be right under these comments).
+
+// This is done, because: a) I figured it's the fastest way to do it, and b) it keeps everything in one file, making local storage and usage a snap.
+
+// If you wanna mess with these array definitions, keep in mind the following (better study the definitions first before you read this; otherwise skip it altogether):
+
+// 1) The unit[i][j] and factor[i][j] arrays should have the same j-length and their elements should correspond to each other in the j dimension; i.e. unit[0][2] should define the name and factor[0][2] the conversion factor of the SAME unit.  Duh!...
+
+// 2) In every property (i.e. the i-dimension of the unit and factor arrays) there should be defined a 'primary' or 'base' unit, i.e. one with a conversion factor of 1.  The definitions of the other (secondary) units should use this formula:
+
+// 1 [Secondary unit] = [Secondary unit conversion factor] [Primary Unit]
+//                                   ^
+//  This goes in the factor array ___|
+//
+//  e.g.: 1 ft = 0.3048 m
+
 // ====================================
 //  Global Variable & Data Definitions
 // ====================================
